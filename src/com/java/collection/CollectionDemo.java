@@ -11,10 +11,17 @@ public class CollectionDemo {
         fruitCollection.add("Apple");
         fruitCollection.add("Mango");
         fruitCollection.add("Orange");
+
+
         System.out.println(fruitCollection);
-        for(String number: fruitCollection){
-            System.out.println(number);
-        }
+
+        fruitCollection.remove("Banana");
+        System.out.println(fruitCollection);
+//        for(String number: fruitCollection){
+//            System.out.println(number);
+//        }
+
+        System.out.println(fruitCollection.contains("orange"));
         }
 
     }
@@ -32,3 +39,9 @@ public class CollectionDemo {
 //    Set --> TreeSet;
 //    Queue --> PriorityQueue;
 //    Queue --> LinkedList;
+
+//A collection tracks the number of elements it contains
+//The capacity of a collection is not limited: you can add (almost) any amount of elements in a collection
+//A collection can control what elements you may store in it. For instance, you can prevent null elements to be added
+//A collection can be queried for the presence of a given element
+//A collection provides operations like intersecting or merging with another collection.
