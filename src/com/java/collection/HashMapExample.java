@@ -2,6 +2,7 @@ package com.java.collection;
 
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class HashMapExample {
@@ -19,6 +20,12 @@ public class HashMapExample {
         for(Map.Entry<String, Integer> entry: map.entrySet()){
             System.out.println(entry.getKey() + ":" + entry.getValue());
         }
+
+        Map<String, Integer> linkedMap = new LinkedHashMap<>();
+        linkedMap.put("Zebra", 10);
+        linkedMap.put("Apple", 20);
+        linkedMap.put("Orange", 49);
+        System.out.println(linkedMap);
 
     }
 }
